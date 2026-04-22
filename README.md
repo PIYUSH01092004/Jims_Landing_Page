@@ -1,67 +1,44 @@
 # JIMS Greater Noida — Landing Page
 
-A fully responsive college landing page for **Jagan Institute of Management Studies (JIMS), Greater Noida**, built for the CareerChoice360 assignment.
+## Project Overview
 
-## 🚀 How to Run Locally
+A fully responsive, production-ready landing page developed for **Jagan Institute of Management Studies (JIMS), Greater Noida**. The project was built as part of an admissions-focused assignment with the goal of replicating a real-world, conversion-oriented college website.
 
-### Option 1 — Open directly
-Simply double-click `index.html` to open in any modern browser.
+---
 
-### Option 2 — Local server (recommended)
-```bash
-# Using Python
-python -m http.server 8080
+## Objective
 
-# Then open http://localhost:8080
-```
+To design and develop a clean, high-performing landing page that effectively presents institutional information and drives user actions such as enquiries and course exploration.
 
-### Option 3 — VS Code Live Server
-1. Install the **Live Server** extension in VS Code
-2. Right-click `index.html` → **Open with Live Server**
+---
 
-## 📁 Folder Structure
+## Key Features
 
-```
-landing_page/
-├── index.html          # Main HTML page
-├── css/
-│   └── style.css       # All styles (design tokens, components, responsive)
-├── js/
-│   └── main.js         # Navbar, mobile menu, scroll reveal, form validation
-├── assets/             # Image assets directory
-└── README.md
-```
+* **Responsive Design**: Mobile-first approach with optimized layouts for mobile, tablet, and desktop
+* **Structured UI Sections**: Hero banner, About section, Courses, CTA banner, Enquiry form, Footer
+* **Form Validation**: Client-side validation using JavaScript with clear success states
+* **Interactive Elements**: Smooth scroll reveals, hover effects, and entry animations
+* **Performance-Oriented**: Lightweight implementation without external libraries
 
-## ✅ Sections Included
+---
 
-| # | Section | Description |
-|---|---------|-------------|
-| 1 | **Hero** | Full-width gradient banner, headline, CTA buttons, entry animations |
-| 2 | **About** | College description, campus image, 3 key stats (30+ years, 5000+ alumni, 95% placements) |
-| 3 | **Courses** | 6 course cards (PGDM specializations + BBA) with hover effects |
-| 4 | **CTA Banner** | Admissions open call-to-action with gradient background |
-| 5 | **Enquiry Form** | Name, Email, Phone, Course fields with JS validation + success state |
-| 6 | **Footer** | Quick links, programmes, branding |
+## Tech Stack
 
-## 🎨 Design Details
+* **HTML5** — Semantic structure
+* **CSS3** — Custom properties, responsive layouts
+* **JavaScript (Vanilla)** — DOM interactions and form handling
 
-- **Colors**: Navy blue (`#1a3c6e`), gold accent (`#e8a838`), dark (`#0f1c2e`)
-- **Fonts**: Outfit (headings), Inter (body) via Google Fonts
-- **Responsive**: Mobile-first, tested for 480px / 768px / 1024px+ breakpoints
-- **Animations**: Scroll reveal, hover effects, hero entry animations
+---
 
-## 📱 Responsive Breakpoints
+## Development Approach
 
-- **Mobile** (< 768px): Single column, hamburger menu, stacked cards
-- **Tablet** (768–1024px): 2-column course grid, adapted layouts
-- **Desktop** (> 1024px): Full grid layouts, side-by-side sections
+* Focused on **clean code organization** and maintainability
+* Used **design tokens** for consistent styling (colors, typography, spacing)
+* Prioritized **user experience and readability** over unnecessary complexity
+* Avoided frameworks to demonstrate core frontend fundamentals
 
-## 🛠 Technologies
+---
 
-- HTML5 (semantic)
-- CSS3 (vanilla, custom properties)
-- JavaScript (vanilla, no libraries)
+## Outcome
 
-## 🌐 Deployment
-
-This project is **Netlify/Vercel ready** — just drag-and-drop the folder or connect the repository.
+The project demonstrates the ability to build a visually consistent, responsive, and user-focused interface aligned with real-world requirements, while maintaining simplicity and performance.
