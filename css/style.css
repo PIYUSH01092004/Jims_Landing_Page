@@ -1,8 +1,6 @@
-/* ============================================
-   JIMS Greater Noida — Landing Page Styles
-   ============================================ */
+/* JIMS Greater Noida - Landing Page */
 
-/* ---------- Design Tokens ---------- */
+/* variables */
 :root {
   --clr-primary: #1a3c6e;
   --clr-primary-light: #2a5298;
@@ -53,7 +51,7 @@
   --max-width: 1200px;
 }
 
-/* ---------- Reset ---------- */
+/* reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -70,7 +68,7 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; font-family: inherit; }
 input, select, textarea { font-family: inherit; font-size: inherit; }
 
-/* ---------- Utility ---------- */
+/* layout */
 .container {
   width: 90%;
   max-width: var(--max-width);
@@ -103,7 +101,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .section-header { text-align: center; margin-bottom: var(--space-3xl); }
 .section-header .section-subtitle { margin: 0 auto; }
 
-/* ---------- Buttons ---------- */
+/* buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -136,16 +134,8 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   background: rgba(255,255,255,.12);
   border-color: #fff;
 }
-.btn-dark {
-  background: var(--clr-primary);
-  color: #fff;
-}
-.btn-dark:hover {
-  background: var(--clr-primary-light);
-  transform: translateY(-2px);
-}
 
-/* ---------- Header / Navbar ---------- */
+/* navbar */
 .header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -190,7 +180,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .nav-links a:hover::after { width: 100%; }
 .nav-cta .btn { padding: 0.6rem 1.5rem; font-size: var(--fs-sm); }
 
-/* Hamburger */
+/* hamburger menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -209,7 +199,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
-/* Mobile nav */
+/* mobile nav overlay */
 .mobile-nav {
   display: none;
   position: fixed;
@@ -232,7 +222,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .mobile-nav a:hover { color: var(--clr-accent); }
 
-/* ---------- Hero ---------- */
+/* hero */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -315,7 +305,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   opacity: 0;
 }
 
-/* Floating shapes */
+/* floating circles */
 .hero-shape {
   position: absolute;
   border-radius: 50%;
@@ -335,7 +325,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   animation: float 10s ease-in-out infinite reverse;
 }
 
-/* ---------- About ---------- */
+/* about section */
 .about { background: var(--clr-bg); }
 .about-grid {
   display: grid;
@@ -404,7 +394,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   margin-top: 4px;
 }
 
-/* ---------- Courses ---------- */
+/* courses */
 .courses { background: var(--clr-bg-alt); }
 .courses-grid {
   display: grid;
@@ -475,7 +465,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .course-card .card-link:hover { color: var(--clr-accent); gap: 10px; }
 
-/* ---------- CTA Banner ---------- */
+/* cta banner */
 .cta-banner {
   position: relative;
   background: linear-gradient(135deg, var(--clr-dark), var(--clr-primary));
@@ -510,7 +500,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .cta-buttons { display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; }
 
-/* ---------- Enquiry Form ---------- */
+/* enquiry / contact */
 .enquiry { background: var(--clr-bg); }
 .enquiry-grid {
   display: grid;
@@ -557,7 +547,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   color: var(--clr-text-light);
 }
 
-/* Form */
+/* form styles */
 .form-card {
   background: #fff;
   border-radius: var(--radius-lg);
@@ -639,7 +629,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
 }
 .form-success p { color: var(--clr-text-light); font-size: var(--fs-sm); }
 
-/* ---------- Footer ---------- */
+/* footer */
 .footer {
   background: var(--clr-dark);
   color: rgba(255,255,255,.6);
@@ -675,7 +665,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   font-size: var(--fs-xs);
 }
 
-/* ---------- Animations ---------- */
+/* animations */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -694,7 +684,7 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   transform: translateY(0);
 }
 
-/* ---------- Responsive ---------- */
+/* responsive */
 @media (max-width: 1024px) {
   .hero h1 { font-size: var(--fs-3xl); }
   .section-title { font-size: var(--fs-2xl); }
