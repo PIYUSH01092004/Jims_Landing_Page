@@ -1,4 +1,4 @@
-# JIMS Greater Noida — Landing Page
+# JIMS Greater Noida - Landing Page
 
 ## Project Overview
 
